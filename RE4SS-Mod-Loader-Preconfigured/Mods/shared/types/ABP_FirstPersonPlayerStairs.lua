@@ -1,0 +1,68 @@
+---@meta
+
+---@class UABP_FirstPersonPlayerStairs_C : UAnimInstance
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field AnimGraphNode_Root FAnimNode_Root
+---@field AnimGraphNode_TransitionResult_9 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult_8 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult_7 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult_6 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult_5 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult_4 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult_3 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult_2 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult_1 FAnimNode_TransitionResult
+---@field AnimGraphNode_TransitionResult FAnimNode_TransitionResult
+---@field AnimGraphNode_BlendSpacePlayer FAnimNode_BlendSpacePlayer
+---@field AnimGraphNode_StateResult_6 FAnimNode_StateResult
+---@field AnimGraphNode_SequencePlayer_10 FAnimNode_SequencePlayer
+---@field AnimGraphNode_SequencePlayer_9 FAnimNode_SequencePlayer
+---@field AnimGraphNode_TwoWayBlend_4 FAnimNode_TwoWayBlend
+---@field AnimGraphNode_StateResult_5 FAnimNode_StateResult
+---@field AnimGraphNode_SequencePlayer_8 FAnimNode_SequencePlayer
+---@field AnimGraphNode_SequencePlayer_7 FAnimNode_SequencePlayer
+---@field AnimGraphNode_TwoWayBlend_3 FAnimNode_TwoWayBlend
+---@field AnimGraphNode_StateResult_4 FAnimNode_StateResult
+---@field AnimGraphNode_SequencePlayer_6 FAnimNode_SequencePlayer
+---@field AnimGraphNode_SequencePlayer_5 FAnimNode_SequencePlayer
+---@field AnimGraphNode_TwoWayBlend_2 FAnimNode_TwoWayBlend
+---@field AnimGraphNode_StateResult_3 FAnimNode_StateResult
+---@field AnimGraphNode_SequencePlayer_4 FAnimNode_SequencePlayer
+---@field AnimGraphNode_SequencePlayer_3 FAnimNode_SequencePlayer
+---@field AnimGraphNode_TwoWayBlend_1 FAnimNode_TwoWayBlend
+---@field AnimGraphNode_StateResult_2 FAnimNode_StateResult
+---@field AnimGraphNode_SequencePlayer_2 FAnimNode_SequencePlayer
+---@field AnimGraphNode_StateResult_1 FAnimNode_StateResult
+---@field AnimGraphNode_SequencePlayer_1 FAnimNode_SequencePlayer
+---@field AnimGraphNode_SequencePlayer FAnimNode_SequencePlayer
+---@field AnimGraphNode_TwoWayBlend FAnimNode_TwoWayBlend
+---@field AnimGraphNode_StateResult FAnimNode_StateResult
+---@field AnimGraphNode_StateMachine FAnimNode_StateMachine
+---@field AnimGraphNode_SubInput FAnimNode_LinkedInputPose
+---@field AnimGraphNode_BlendListByBool FAnimNode_BlendListByBool
+---@field StairsActive boolean
+---@field StairsMove boolean
+---@field StairsAlpha float
+---@field SpeedForward float
+---@field SpeedRight float
+UABP_FirstPersonPlayerStairs_C = {}
+
+---@param InPose FPoseLink
+---@param AnimGraph FPoseLink
+function UABP_FirstPersonPlayerStairs_C:AnimGraph(InPose, AnimGraph) end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_833FEE48485623A2175F7CABE0342F69() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_F1DC7F62416005053605258B36743E86() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_320CF54A492FB0968DB2A5BA03777839() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_9FA57741455AFE730F9863ABE3A8806B() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_BlendSpacePlayer_44FEDD13452F951FD607E1A8F5E5B360() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_6133B2AA40AD0044189C9F8051D7E37C() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_8983F50A40795AD9836247A5376387BB() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_5E4C89F240BD9EC4B2AAB4A484CD2906() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_2A588636478BE2A50B8416A5C2859069() end
+function UABP_FirstPersonPlayerStairs_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_FirstPersonPlayerStairs_AnimGraphNode_TransitionResult_84B7715943EAEF2EAB23DDBDBE199220() end
+---@param DeltaTimeX float
+function UABP_FirstPersonPlayerStairs_C:BlueprintUpdateAnimation(DeltaTimeX) end
+---@param EntryPoint int32
+function UABP_FirstPersonPlayerStairs_C:ExecuteUbergraph_ABP_FirstPersonPlayerStairs(EntryPoint) end
+
+

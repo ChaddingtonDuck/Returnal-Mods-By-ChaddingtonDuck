@@ -1,0 +1,14 @@
+---@meta
+
+---@class FS_CinematicProp
+---@field Prop_2_28452F6942DD7DDF3F6D3E8F301415AA AActor
+---@field Montage_12_DAEF21304F792EB3A63FD0A563824F79 UAnimMontage
+---@field IdleMontage_24_25E965214D47979CF5568D8F166F1632 UAnimMontage
+---@field SpawnClass_15_10FA4BD84C981063CFFB609259B39737 TSoftClassPtr<AActor>
+---@field SpawnTransform_14_BF2977364BED1BE7D8635B9F9B9FB462 FTransform
+---@field AutoDestroy_17_244CDE9B4D0ECAD3136987A7B1FAA262 boolean
+---@field PauseMontageOnStop_20_288E9C0540DA6A67CC586FA7C8F9BEFE boolean
+FS_CinematicProp = {}
+
+
+

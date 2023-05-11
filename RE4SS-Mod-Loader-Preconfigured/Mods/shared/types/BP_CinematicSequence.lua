@@ -1,0 +1,111 @@
+---@meta
+
+---@class ABP_CinematicSequence_C : ABP_Cinematic_C
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field BPC_CinematicPlayerControl UBPC_CinematicPlayerControl_C
+---@field CinematicSequence UCinematicSequenceComponent
+---@field LevelSequenceActors TArray<ALevelSequenceActor>
+---@field LevelSequences TArray<TSoftObjectPtr<ULevelSequence>>
+---@field LevelSequencePlayer ASequenceCinematicPlayer
+---@field InitiatorSequenceBindingName FName
+---@field LevelSequenceAct ALevelSequenceActor
+---@field Camera ACameraActor
+---@field CameraBlendInTransition FViewTargetTransitionParams
+---@field CameraBlendOutTransition FViewTargetTransitionParams
+---@field CameraBlendOutEnabled boolean
+---@field SpawnedCamera ACameraActor
+---@field CameraBindingEnabled boolean
+---@field Bindings TArray<FCinematicSequenceBinding>
+---@field EventReceivers TArray<AActor>
+---@field CameraAttachmentEnabled boolean
+---@field OnSequenceComplete FBP_CinematicSequence_COnSequenceComplete
+---@field SequenceSetupDeferred boolean
+---@field CameraBlendOutTriggered boolean
+---@field InitiatorAttachmentEnabled boolean
+---@field OriginalBindings TArray<FCinematicSequenceBinding>
+---@field SelectedSequenceActor ALevelSequenceActor
+---@field SelectedSequence TSoftObjectPtr<ULevelSequence>
+---@field SpawnedCameras TArray<ACameraActor>
+---@field NeedsFailsafe boolean
+ABP_CinematicSequence_C = {}
+
+function ABP_CinematicSequence_C:DisableGraphicsOverrides() end
+function ABP_CinematicSequence_C:EnableGraphicsOverrides() end
+---@param NewBinding FCinematicSequenceBinding
+function ABP_CinematicSequence_C:RegisterSequenceBinding(NewBinding) end
+---@param Result ACameraActor
+function ABP_CinematicSequence_C:SpawnCinematicCamera(Result) end
+function ABP_CinematicSequence_C:SelectSequence() end
+---@param Bindings TArray<FCinematicSequenceBinding>
+function ABP_CinematicSequence_C:GatherSequenceBindings(Bindings) end
+---@param Result boolean
+function ABP_CinematicSequence_C:IsCameraBlendOutTriggered(Result) end
+---@param Result boolean
+function ABP_CinematicSequence_C:HasSequence(Result) end
+---@param Result int32
+function ABP_CinematicSequence_C:GetStartCameraDelay(Result) end
+---@param CameraActor AActor
+function ABP_CinematicSequence_C:SetupCinematicCamera(CameraActor) end
+---@param Result boolean
+function ABP_CinematicSequence_C:IsCameraBlendOutRequired(Result) end
+---@param Result FCinematicSequenceBinding
+function ABP_CinematicSequence_C:MakeInitiatorBinding(Result) end
+---@param Result APawn
+function ABP_CinematicSequence_C:GetCameraBlendOutPawn(Result) end
+---@param Result boolean
+function ABP_CinematicSequence_C:IsSequenceLoaded(Result) end
+function ABP_CinematicSequence_C:AddSequenceBindings() end
+---@param Result ALevelSequenceActor
+function ABP_CinematicSequence_C:GetSequenceActor(Result) end
+function ABP_CinematicSequence_C:SetupSequence() end
+---@param CameraActor AActor
+function ABP_CinematicSequence_C:GetCinematicCamera(CameraActor) end
+---@param CameraActor AActor
+function ABP_CinematicSequence_C:SecureCinematicCamera(CameraActor) end
+function ABP_CinematicSequence_C:ReceiveRunCinematic() end
+---@param SkipGateName FName
+function ABP_CinematicSequence_C:ReceiveSkipCinematic(SkipGateName) end
+function ABP_CinematicSequence_C:ReceiveStopCinematic() end
+function ABP_CinematicSequence_C:PreSequence() end
+function ABP_CinematicSequence_C:PostSequence() end
+function ABP_CinematicSequence_C:RunSequence() end
+function ABP_CinematicSequence_C:PlaySequence() end
+function ABP_CinematicSequence_C:LoadCinematic() end
+---@param LevelSequence TSoftObjectPtr<ULevelSequence>
+---@param Bindings TArray<FCinematicSequenceBinding>
+---@param EventReceivers TArray<AActor>
+function ABP_CinematicSequence_C:SpawnSequenceInternal(LevelSequence, Bindings, EventReceivers) end
+---@param LevelSequenceActor ALevelSequenceActor
+function ABP_CinematicSequence_C:SpawnSequenceComplete(LevelSequenceActor) end
+---@param SequenceActor ALevelSequenceActor
+---@param Bindings TArray<FCinematicSequenceBinding>
+---@param EventReceivers TArray<AActor>
+function ABP_CinematicSequence_C:SetupSequenceInternal(SequenceActor, Bindings, EventReceivers) end
+---@param LevelSequenceActor ALevelSequenceActor
+function ABP_CinematicSequence_C:SetupSequenceComplete(LevelSequenceActor) end
+function ABP_CinematicSequence_C:AfterCameraBlendOut() end
+function ABP_CinematicSequence_C:CameraBlendOut() end
+---@param TransitionParams FViewTargetTransitionParams
+function ABP_CinematicSequence_C:NoCameraBlendOut(TransitionParams) end
+function ABP_CinematicSequence_C:ReceiveSetupCinematic() end
+function ABP_CinematicSequence_C:PlayCamera() end
+function ABP_CinematicSequence_C:ReceiveBeginPlay() end
+function ABP_CinematicSequence_C:SequenceLoadWait() end
+function ABP_CinematicSequence_C:SequenceLoadComplete() end
+function ABP_CinematicSequence_C:CameraBlendOutOnce() end
+---@param LevelSequencePath FSoftObjectPath
+---@param LevelSequenceObject ULevelSequence
+function ABP_CinematicSequence_C:SequenceLoaded(LevelSequencePath, LevelSequenceObject) end
+---@param LevelSequencePath FSoftObjectPath
+---@param LevelSequenceObject ULevelSequence
+function ABP_CinematicSequence_C:SequencePathLoaded(LevelSequencePath, LevelSequenceObject) end
+function ABP_CinematicSequence_C:K2_OnReset() end
+function ABP_CinematicSequence_C:SkipSequence() end
+function ABP_CinematicSequence_C:FAILSAFE() end
+function ABP_CinematicSequence_C:OnCancelLocalPlayerCinematics_Event() end
+---@param EntryPoint int32
+function ABP_CinematicSequence_C:ExecuteUbergraph_BP_CinematicSequence(EntryPoint) end
+---@param Cinematic ABP_CinematicSequence_C
+function ABP_CinematicSequence_C:OnSequenceComplete__DelegateSignature(Cinematic) end
+
+

@@ -1,0 +1,24 @@
+---@meta
+
+---@class FST_ComplexProgressBarStyle
+---@field FullBrush_2_ED5E41D948016B3D011AEF9FE6692B79 USlateBrushAsset
+---@field ModificationBrush_4_9DAE327040F2F1F917CF1FA9F8C030A0 USlateBrushAsset
+---@field BackgroundBrush_8_5B534CD44AC45AD58AB17F90D4712E1D USlateBrushAsset
+---@field FillGlowBrush_7_C13B3EC140F7B9A65A24DAB955FDEC74 USlateBrushAsset
+---@field FillGlowMargin_12_A5B069EB4F1629302EED20846FBEF16E FMargin
+---@field FillGlowColor_21_CBF85BDC4AADC9CBE2AEE1BF62205F6C FLinearColor
+---@field FillColor_22_488A0F094124FEA7435C7FB16B2C258C FLinearColor
+---@field ModificationPositiveColor_23_0DCE2752431D22D18F1CEB8CEE5143EA FLinearColor
+---@field ModificationNegativeColor_24_6CAC14274AB7C8E1B26C19AE0569DF45 FLinearColor
+---@field BackgroundColor_26_06AA80184F19DF7BDC33538ABF5B074E FLinearColor
+---@field InterSpeed_29_990202E645A5F8AD5FC040A55D3F6808 float
+---@field FlashColor_32_12352CE64798185FDAA6DEA00F2B97AC FLinearColor
+---@field FlashSpeed_35_F76095B5488AB7D708EF1BB340CEED4A float
+---@field ColorInterpSpeed_37_50D679DE4C6952E7C92F7F80F8CC6169 float
+---@field ColorAndOpactiy_40_EACB40124C5C4907136DA7832A6D4A02 FLinearColor
+---@field ForegroundColor_43_DC7F6658484F2E5575631AA3C595D058 FSlateColor
+---@field Padding_46_F9A0263940253A3EF061A0A95C608689 FMargin
+FST_ComplexProgressBarStyle = {}
+
+
+

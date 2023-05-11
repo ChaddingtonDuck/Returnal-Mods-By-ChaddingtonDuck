@@ -1,0 +1,43 @@
+---@meta
+
+---@class UWBP_DebugVoiceChatSettingsMenu_C : UUserWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Button_EnableVoiceChat UButton
+---@field Button_SendTextMessage UButton
+---@field Deafen_Tickbox UCheckBox
+---@field EditableText_TextMessage UMultiLineEditableText
+---@field ImageBG UImage
+---@field InputVolume_SpinBox_1 UWBP_GamepadSpinbox_C
+---@field Mute_Tickbox UCheckBox
+---@field OutputVolume_SpinBox UWBP_GamepadSpinbox_C
+---@field TextToSpeech_Tickbox UCheckBox
+---@field VoiceEffects_Tickbox UCheckBox
+---@field VoiceMode_ComboBox_1 UComboBoxString
+---@field WBP_DebugButtonApply_2 UWBP_DebugButton_C
+---@field TextMessage FText
+UWBP_DebugVoiceChatSettingsMenu_C = {}
+
+---@return FText
+function UWBP_DebugVoiceChatSettingsMenu_C:Get_LevelGenSeed_TextBox_Text_0() end
+---@param value float
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__OutputVolume_SpinBox_K2Node_ComponentBoundEvent_2_ValueChanged__DelegateSignature(value) end
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__Button_SendTextMessage_K2Node_ComponentBoundEvent_3_OnButtonClickedEvent__DelegateSignature() end
+---@param Text FText
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__EditableText_TextMessage_K2Node_ComponentBoundEvent_4_OnMultiLineEditableTextChangedEvent__DelegateSignature(Text) end
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__Button_EnableVoiceChat_K2Node_ComponentBoundEvent_6_OnButtonClickedEvent__DelegateSignature() end
+---@param bIsChecked boolean
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__Deafen_Tickbox_K2Node_ComponentBoundEvent_1_OnCheckBoxComponentStateChanged__DelegateSignature(bIsChecked) end
+---@param value float
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__InputVolume_SpinBox_1_K2Node_ComponentBoundEvent_7_ValueChanged__DelegateSignature(value) end
+---@param bIsChecked boolean
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__TextToSpeech_Tickbox_K2Node_ComponentBoundEvent_5_OnCheckBoxComponentStateChanged__DelegateSignature(bIsChecked) end
+---@param Button UWBP_DebugButton_C
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__WBP_DebugButtonApply_2_K2Node_ComponentBoundEvent_8_OnClicked__DelegateSignature(Button) end
+---@param bIsChecked boolean
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__VoiceEffects_Tickbox_K2Node_ComponentBoundEvent_9_OnCheckBoxComponentStateChanged__DelegateSignature(bIsChecked) end
+---@param bIsChecked boolean
+function UWBP_DebugVoiceChatSettingsMenu_C:BndEvt__Mute_Tickbox_K2Node_ComponentBoundEvent_0_OnCheckBoxComponentStateChanged__DelegateSignature(bIsChecked) end
+---@param EntryPoint int32
+function UWBP_DebugVoiceChatSettingsMenu_C:ExecuteUbergraph_WBP_DebugVoiceChatSettingsMenu(EntryPoint) end
+
+

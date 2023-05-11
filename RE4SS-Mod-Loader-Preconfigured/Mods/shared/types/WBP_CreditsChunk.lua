@@ -1,0 +1,77 @@
+---@meta
+
+---@class UWBP_CreditsChunk_C : UTouristWidgetBase
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Border_124 UBorder
+---@field CanvasPanel_0 UCanvasPanel
+---@field TextBlock UTextBlock
+---@field TextBlock_216 UTextBlock
+---@field VerticalBox_0 UVerticalBox
+---@field WBP_HorizontalLine UWBP_HorizontalLine_C
+---@field WBP_HorizontalLine_1 UWBP_HorizontalLine_C
+---@field CurrentQueueIndex int32
+---@field CachedImageWidgets TArray<UWidget>
+---@field bWidgetsFinished boolean
+---@field bTextFinished boolean
+---@field CachedTextWidgets TArray<UWidget>
+---@field TextWidgetStyle UBP_WidgetStyle_C
+---@field TextWidgetHeaderStyle UBP_WidgetStyle_C
+---@field CreditsChunks TArray<FS_CreditsChunkArray>
+---@field NameString FString
+---@field TitleString FString
+---@field FontData_Standard UDataTable
+---@field FontData_Header UDataTable
+---@field FontData_Special UDataTable
+---@field RawHeaderString FString
+---@field HeaderString FString
+---@field HeaderPadding float
+---@field HeaderSeperator FString
+---@field EndlineChar FString
+---@field HeaderStringArray TArray<FString>
+---@field HeaderLineCharArray TArray<FString>
+---@field bHandlingColumnLines boolean
+---@field CachedColumnsWidgets TArray<UWBP_CreditsColumns_C>
+---@field OnSizeChanged FWBP_CreditsChunk_COnSizeChanged
+---@field HeaderSeperator_NoLineBreak FString
+---@field CachedTitleString FString
+UWBP_CreditsChunk_C = {}
+
+---@param CreatedWidget UWBP_CreditsColumns_C
+function UWBP_CreditsChunk_C:CreateCreditsColumns(CreatedWidget) end
+---@param Widget UWidget
+function UWBP_CreditsChunk_C:GiveCreatedWidgetParent(Widget) end
+---@param Success boolean
+function UWBP_CreditsChunk_C:Func_PreviousElement(Success) end
+---@param CreatedWidget UWBP_CreditsTextLine_C
+function UWBP_CreditsChunk_C:CreateSpecialTextWidget(CreatedWidget) end
+---@param CreatedWidget UWidget
+function UWBP_CreditsChunk_C:CreateTextWidget(CreatedWidget) end
+---@param SizeY float
+function UWBP_CreditsChunk_C:GetScreenBottom(SizeY) end
+---@param Finished boolean
+function UWBP_CreditsChunk_C:IsChunkFinished(Finished) end
+---@param CreditsText FText
+function UWBP_CreditsChunk_C:SetCreditsChunkText(CreditsText) end
+---@param CreditsChunk TArray<FS_CreditsChunk>
+function UWBP_CreditsChunk_C:SetCreditsChunkInfo(CreditsChunk) end
+function UWBP_CreditsChunk_C:NextElement() end
+---@param WidgetClass TArray<TSubclassOf<UWidget>>
+function UWBP_CreditsChunk_C:CreateImageWidgets(WidgetClass) end
+function UWBP_CreditsChunk_C:DestroyImageWidgets() end
+function UWBP_CreditsChunk_C:DestroyTextWidgets() end
+---@param Class TSubclassOf<UWidget>
+function UWBP_CreditsChunk_C:CreateImageWidget(Class) end
+---@param HeaderText FText
+function UWBP_CreditsChunk_C:SetCreditsHeaderText(HeaderText) end
+---@param SpecialText FText
+function UWBP_CreditsChunk_C:MakeSpecialTextField(SpecialText) end
+function UWBP_CreditsChunk_C:PreviousElement() end
+function UWBP_CreditsChunk_C:DestroyColumWidgets() end
+function UWBP_CreditsChunk_C:ColumnSizeChanged() end
+function UWBP_CreditsChunk_C:CreateAndBindCreditsColumns() end
+---@param EntryPoint int32
+function UWBP_CreditsChunk_C:ExecuteUbergraph_WBP_CreditsChunk(EntryPoint) end
+---@param ChangedChunk UWBP_CreditsChunk_C
+function UWBP_CreditsChunk_C:OnSizeChanged__DelegateSignature(ChangedChunk) end
+
+

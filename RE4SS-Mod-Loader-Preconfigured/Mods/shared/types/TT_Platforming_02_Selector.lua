@@ -1,0 +1,6 @@
+---@meta
+
+---@class UTT_Platforming_02_Selector_C : ULevelGenRoomSublevelSelectorBase
+UTT_Platforming_02_Selector_C = {}
+
+

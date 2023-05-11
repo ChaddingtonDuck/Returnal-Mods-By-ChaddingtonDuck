@@ -1,0 +1,165 @@
+---@meta
+
+---@class UWBP_PauseEquipmentWeapon_C : UTouristWidgetBase
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Anim_IntroGlow_Altfire UWidgetAnimation
+---@field Anim_IntroGlow UWidgetAnimation
+---@field Anim_GunNameFocus UWidgetAnimation
+---@field EnterScreen UWidgetAnimation
+---@field Anim_Focus UWidgetAnimation
+---@field Anim_AltFireFocus UWidgetAnimation
+---@field AltFire_FocusHoveringButton UFocusHoveringButton
+---@field BackgroundGrid UImage
+---@field Border_AltFire UBorder
+---@field Border_AltFireName UBorder
+---@field BrushImage_GlowLevel UWBP_BrushImage_C
+---@field BrushImage_GlowWeapon UWBP_BrushImage_C
+---@field EmptyImage UImage
+---@field HorizontalLine_BelowAltFire UWBP_HorizontalLine_C
+---@field HorizontalLine_BelowStats UWBP_HorizontalLine_C
+---@field HorizontalLine_BelowTraits UWBP_HorizontalLine_C
+---@field Image UImage
+---@field Image_AltFire UImage
+---@field Image_AltFireLevel UImage
+---@field Image_AnimBlock UImage
+---@field Image_AnimGlow UImage
+---@field Image_Level UImage
+---@field Image_Scanline UImage
+---@field Image_Scanline_FocusHovering UFocusHoveringButton
+---@field Pip_1 UImage
+---@field Pip_2 UImage
+---@field Pip_3 UImage
+---@field PipVerticalBox UVerticalBox
+---@field ProficiencyOverlay UOverlay
+---@field RichText_AltFire UHMQRichTextBlock
+---@field RichText_AltFire_Percentage UHMQRichTextBlock
+---@field RichText_DPS UHMQRichTextBlock
+---@field RichText_InsideTitle UHMQRichTextBlock
+---@field RichText_Level UHMQRichTextBlock
+---@field RichText_TraitDesc UHMQRichTextBlock
+---@field Text_AltFire UTextBlock
+---@field VerticalBox_AltFire UVerticalBox
+---@field VerticalBox_Content UVerticalBox
+---@field VerticalBox_Stats UVerticalBox
+---@field VerticalBox_Traits UVerticalBox
+---@field VerticalLine_AltFire UWBP_VerticalLine_C
+---@field VerticalLine_AltFire_1 UWBP_VerticalLine_C
+---@field VerticalLine_AltFire_2 UWBP_VerticalLine_C
+---@field WBP_BrushImage UWBP_BrushImage_C
+---@field WBP_BrushImage_1 UWBP_BrushImage_C
+---@field WBP_BrushImage_2 UWBP_BrushImage_C
+---@field WBP_CaptureImage2 UWBP_CaptureImage2_C
+---@field WBP_HorizontalLine_2 UWBP_HorizontalLine_C
+---@field WBP_HorizontalLine_3 UWBP_HorizontalLine_C
+---@field WBP_HorizontalLine_4 UWBP_HorizontalLine_C
+---@field WBP_HorizontalLine_5 UWBP_HorizontalLine_C
+---@field WBP_HorizontalLine_96 UWBP_HorizontalLine_C
+---@field WBP_HorizontalLine_126 UWBP_HorizontalLine_C
+---@field WBP_MenuBox UWBP_MenuBox_C
+---@field WBP_VerticalLine UWBP_VerticalLine_C
+---@field WBP_VerticalLine_1 UWBP_VerticalLine_C
+---@field WBP_VerticalLine_2 UWBP_VerticalLine_C
+---@field WBP_VerticalLine_3 UWBP_VerticalLine_C
+---@field WBP_VerticalLine_4 UWBP_VerticalLine_C
+---@field WBP_VerticalLine_5 UWBP_VerticalLine_C
+---@field WBP_VerticalLine_6 UWBP_VerticalLine_C
+---@field WBP_VerticalLine_7 UWBP_VerticalLine_C
+---@field WBP_VerticalLine_8 UWBP_VerticalLine_C
+---@field WBP_VerticalLine_136 UWBP_VerticalLine_C
+---@field WeaponName_FocusHovering UFocusHoveringButton
+---@field Text_AltFireDeco FText
+---@field TraitVisuals UBP_WeaponTraitVisuals_C
+---@field TraitVisuals_SoftRef TSoftObjectPtr<UBP_WeaponTraitVisuals_C>
+---@field WidgetStyle_AltFire UBP_WidgetStyle_C
+---@field WidgetStyle_Focus UBP_WidgetStyle_C
+---@field WidgetStyle_NoFocus UBP_WidgetStyle_C
+---@field WidgetStyle_Level UBP_WidgetStyle_C
+---@field FocusIndex int32
+---@field Text_AltFireDesc FText
+---@field HasAltFire boolean
+---@field AltFireFocusPhase float
+---@field FocusPhase float
+---@field OnFocusEscape FWBP_PauseEquipmentWeapon_COnFocusEscape
+---@field FocusWrapping boolean
+---@field WeaponRotationSpeedOverride float
+---@field WeaponRotation float
+---@field FocusStyle FColor
+---@field ['Widge Style Focus Yellow'] UBP_WidgetStyle_C
+---@field WidgetStyle_NoFocus_LightBlue UBP_WidgetStyle_C
+---@field LocalisationArray TArray<FString>
+---@field NavigationSound UAkAudioEvent
+---@field SetupDone boolean
+---@field PendingFocusTraitType EGunTraitType::Type
+---@field GunDisplayName FText
+---@field GunDisplayDesc FText
+---@field CaptureImageOffsets UBPDA_CaptureImageOffsets_C
+---@field PipActiveColor FLinearColor
+---@field PipSemiActiveColor FLinearColor
+---@field PipNotActiveColor FLinearColor
+---@field OnMouseFocused FWBP_PauseEquipmentWeapon_COnMouseFocused
+---@field FocusKeeper FWBP_PauseEquipmentWeapon_CFocusKeeper
+---@field bIsHighlighted boolean
+---@field bAllowMouseBeep boolean
+---@field bIsFocused boolean
+---@field bRotatingByMouse boolean
+---@field RotatingKey FKey
+---@field PrevMouseX float
+---@field bCanOnlyHighlightOnce boolean
+UWBP_PauseEquipmentWeapon_C = {}
+
+---@param MyGeometry FGeometry
+---@param MouseEvent FPointerEvent
+---@return FEventReply
+function UWBP_PauseEquipmentWeapon_C:OnMouseButtonDown(MyGeometry, MouseEvent) end
+---@param AltFireLevelPips int32
+---@param IsInProgress boolean
+function UWBP_PauseEquipmentWeapon_C:SetAltFirePips(AltFireLevelPips, IsInProgress) end
+---@param WeaponRotationSpeedOverride float
+function UWBP_PauseEquipmentWeapon_C:SetWeaponRotationSpeedOverride(WeaponRotationSpeedOverride) end
+---@param Result boolean
+function UWBP_PauseEquipmentWeapon_C:AcceptsFocus(Result) end
+---@param phase float
+function UWBP_PauseEquipmentWeapon_C:SetFocusPhase(phase) end
+---@param phase float
+function UWBP_PauseEquipmentWeapon_C:SetAltFireFocusPhase(phase) end
+function UWBP_PauseEquipmentWeapon_C:Beep() end
+---@param FocusIndex int32
+function UWBP_PauseEquipmentWeapon_C:SetFocusIndex(FocusIndex) end
+---@param MyGeometry FGeometry
+---@param InKeyEvent FKeyEvent
+---@return FEventReply
+function UWBP_PauseEquipmentWeapon_C:OnKeyDown(MyGeometry, InKeyEvent) end
+---@param MyGeometry FGeometry
+---@param InFocusEvent FFocusEvent
+---@return FEventReply
+function UWBP_PauseEquipmentWeapon_C:OnFocusReceived(MyGeometry, InFocusEvent) end
+---@param Loaded UObject
+function UWBP_PauseEquipmentWeapon_C:OnLoaded_8AF21BE7433255EA5C87679168CC30D2(Loaded) end
+---@param IsDesignTime boolean
+function UWBP_PauseEquipmentWeapon_C:PreConstruct(IsDesignTime) end
+---@param InFocusEvent FFocusEvent
+function UWBP_PauseEquipmentWeapon_C:OnFocusLost(InFocusEvent) end
+function UWBP_PauseEquipmentWeapon_C:Construct() end
+function UWBP_PauseEquipmentWeapon_C:Setup() end
+---@param MyGeometry FGeometry
+---@param InDeltaTime float
+function UWBP_PauseEquipmentWeapon_C:Tick(MyGeometry, InDeltaTime) end
+function UWBP_PauseEquipmentWeapon_C:PlayWeaponEntryAnimation() end
+---@param TraitType EGunTraitType::Type
+function UWBP_PauseEquipmentWeapon_C:MoveFocusToTrait(TraitType) end
+---@param Widget UUserWidget
+function UWBP_PauseEquipmentWeapon_C:OnTraitMouseFocused(Widget) end
+function UWBP_PauseEquipmentWeapon_C:BndEvt__WeaponName_FocusHoveringButton_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature() end
+function UWBP_PauseEquipmentWeapon_C:StealFocus() end
+function UWBP_PauseEquipmentWeapon_C:ReceiveVisibilityInHierarchyChanged() end
+function UWBP_PauseEquipmentWeapon_C:BndEvt__FocusHoveringButton_146_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_PauseEquipmentWeapon_C:ExecuteUbergraph_WBP_PauseEquipmentWeapon(EntryPoint) end
+---@param FocusIndex int32
+function UWBP_PauseEquipmentWeapon_C:FocusKeeper__DelegateSignature(FocusIndex) end
+---@param Widget UUserWidget
+function UWBP_PauseEquipmentWeapon_C:OnMouseFocused__DelegateSignature(Widget) end
+---@param side EHorizontalAlignment
+function UWBP_PauseEquipmentWeapon_C:OnFocusEscape__DelegateSignature(side) end
+
+

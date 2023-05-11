@@ -1,0 +1,10 @@
+---@meta
+
+---@class FS_GraphicsImpactPreview
+---@field CPU_11_20449F5B468A21A8DA0A718B8201E327 int32
+---@field GPU_12_B280390B454B88AF3867228E0E0EE2C7 int32
+---@field VRAM_13_7B66B833463C5C30E618F69DDFDB8FAA int32
+FS_GraphicsImpactPreview = {}
+
+
+

@@ -1,0 +1,111 @@
+---@meta
+
+---@class UWBP_PauseEquipmentDatacube_C : UUserWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Anim_Intro_Glow UWidgetAnimation
+---@field Anim_ActiveWithoutFocus UWidgetAnimation
+---@field Anim_Focus UWidgetAnimation
+---@field Border_Image UBorder
+---@field BrushImage_Glow UWBP_BrushImage_C
+---@field BrushImage_Glow_1 UWBP_BrushImage_C
+---@field CubeBorder UBorder
+---@field Datacube UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_1 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_2 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_3 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_4 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_5 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_6 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_7 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_8 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_9 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_10 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_11 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_12 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_13 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_14 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_15 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_16 UWBP_PauseEquipmentDatacubeItem_C
+---@field Datacube_17 UWBP_PauseEquipmentDatacubeItem_C
+---@field DatacubeCollection_UniformPanel UUniformGridPanel
+---@field Glow_Anim UImage
+---@field HorLine_Bottom UWBP_HorizontalLine_C
+---@field HorLine_Bottom_1 UWBP_HorizontalLine_C
+---@field HorLine_Bottom_2 UWBP_HorizontalLine_C
+---@field HorLine_Bottom_3 UWBP_HorizontalLine_C
+---@field HorLine_Top UWBP_HorizontalLine_C
+---@field HorLine_Top_1 UWBP_HorizontalLine_C
+---@field HorLine_Top_2 UWBP_HorizontalLine_C
+---@field HorLine_Top_3 UWBP_HorizontalLine_C
+---@field Image_Arrow UImage
+---@field Image_Empty UImage
+---@field Image_Fill UImage
+---@field Image_Fill_Unselected UImage
+---@field Image_Icon UImage
+---@field Image_Icon_1 UImage
+---@field Image_ScanlineOverlay UImage
+---@field RTB_IconText UHMQRichTextBlock
+---@field VerLine_BottomLeft UWBP_VerticalLine_C
+---@field VerLine_BottomLeft_1 UWBP_VerticalLine_C
+---@field VerLine_BottomLeft_2 UWBP_VerticalLine_C
+---@field VerLine_BottomLeft_3 UWBP_VerticalLine_C
+---@field VerLine_TopLeft UWBP_VerticalLine_C
+---@field VerLine_TopLeft_1 UWBP_VerticalLine_C
+---@field VerLine_TopLeft_2 UWBP_VerticalLine_C
+---@field VerLine_TopLeft_3 UWBP_VerticalLine_C
+---@field VerLine_TopRight UWBP_VerticalLine_C
+---@field VerLine_TopRight_1 UWBP_VerticalLine_C
+---@field Duplicates TArray<UMetaModifierBaseComponent>
+---@field Item UMetaModifierBaseComponent
+---@field Focused boolean
+---@field WidgetStyle_Focus UBP_WidgetStyle_C
+---@field WidgetStyle_NoFocus UBP_WidgetStyle_C
+---@field WidgetStyle_Icon UBP_WidgetStyle_C
+---@field FocusPhase float
+---@field IconSize float
+---@field AbilityClass TSubclassOf<UGameplayAbility>
+---@field GameplayFlag FName
+---@field CollectibleClass TSubclassOf<ACollectibleBase>
+---@field ShouldShowIconText boolean
+---@field LargeGlowColor_1 FLinearColor
+---@field SmallGlowColor_2 FLinearColor
+---@field ActiveWithoutFocus boolean
+---@field DestroyPending boolean
+---@field FocusKeeper FWBP_PauseEquipmentDatacube_CFocusKeeper
+---@field OnMouseFocused FWBP_PauseEquipmentDatacube_COnMouseFocused
+---@field bOtherItemBeingDestroyed boolean
+UWBP_PauseEquipmentDatacube_C = {}
+
+function UWBP_PauseEquipmentDatacube_C:SetDataCubeProgress() end
+---@param Text FText
+function UWBP_PauseEquipmentDatacube_C:SetIconText(Text) end
+---@param phase float
+function UWBP_PauseEquipmentDatacube_C:SetFocusPhase(phase) end
+---@param Focused boolean
+---@param ActiveWithoutFocus boolean
+function UWBP_PauseEquipmentDatacube_C:SetFocusState(Focused, ActiveWithoutFocus) end
+---@param Duplicate UMetaModifierBaseComponent
+function UWBP_PauseEquipmentDatacube_C:AddDuplicate(Duplicate) end
+---@param Ability TSubclassOf<UGameplayAbility>
+---@param Icon TSoftObjectPtr<UTexture2D>
+function UWBP_PauseEquipmentDatacube_C:SetupAbility(Ability, Icon) end
+---@param GameplayFlag FName
+---@param Icon TSoftObjectPtr<UTexture2D>
+function UWBP_PauseEquipmentDatacube_C:SetupGameplayFlag(GameplayFlag, Icon) end
+---@param CollectibleClass TSubclassOf<ACollectibleBase>
+function UWBP_PauseEquipmentDatacube_C:SetupCollectible(CollectibleClass) end
+function UWBP_PauseEquipmentDatacube_C:Reset() end
+---@param IsDesignTime boolean
+function UWBP_PauseEquipmentDatacube_C:PreConstruct(IsDesignTime) end
+---@param Item UMetaModifierBaseComponent
+function UWBP_PauseEquipmentDatacube_C:Setup(Item) end
+---@param MyGeometry FGeometry
+---@param MouseEvent FPointerEvent
+function UWBP_PauseEquipmentDatacube_C:OnMouseEnter(MyGeometry, MouseEvent) end
+---@param EntryPoint int32
+function UWBP_PauseEquipmentDatacube_C:ExecuteUbergraph_WBP_PauseEquipmentDatacube(EntryPoint) end
+function UWBP_PauseEquipmentDatacube_C:OnMouseFocused__DelegateSignature() end
+---@param PauseEquipomentDatacube UWBP_PauseEquipmentDatacube_C
+function UWBP_PauseEquipmentDatacube_C:FocusKeeper__DelegateSignature(PauseEquipomentDatacube) end
+
+

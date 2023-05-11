@@ -1,0 +1,13 @@
+---@meta
+
+---@class FDeathAnimData
+---@field PlayerAnim_11_1F9DF42148021DA9EEBF89B93FF9AD94 UAnimMontage
+---@field FinishTimeFromEnd_21_BF9555084C84A1F3F9DC18BA7006ED22 float
+---@field Cam_Front_12_D681978B4171809B2209CBA46EDA87FA UAnimMontage
+---@field Cam_Back_13_5D00D6A24AFDE1E2541D8499736B3F4E UAnimMontage
+---@field Cam_Left_14_FC673DD542C2243C55F54A81C85F0B00 UAnimMontage
+---@field Cam_Right_15_4F0808FF483E1206FDC85E880DBDFAF3 UAnimMontage
+FDeathAnimData = {}
+
+
+

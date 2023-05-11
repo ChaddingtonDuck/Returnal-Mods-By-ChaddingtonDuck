@@ -1,0 +1,75 @@
+---@meta
+
+---@class UWBP_GameplaySettings_C : USysSettingsTab
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Intro UWidgetAnimation
+---@field CanvasPanel_0 UCanvasPanel
+---@field LineBottom UWBP_HorizontalLinePlain_C
+---@field LineBottom_1 UWBP_HorizontalLinePlain_C
+---@field LineBottom_2 UWBP_HorizontalLinePlain_C
+---@field LineBottom_3 UWBP_HorizontalLinePlain_C
+---@field LineBottom_4 UWBP_HorizontalLinePlain_C
+---@field MainButton UWBP_SettingsTabBtn_C
+---@field MainSettingsScrollBox UScrollBox
+---@field SettingAltFireToggle UWBP_SettingBase_C
+---@field SettingCameraShakeModifier UWBP_SettingBase_C
+---@field SettingInteract UWBP_SettingBase_C
+---@field SettingPauseFocusLost UWBP_SettingBase_C
+---@field SettingScan UWBP_SettingBase_C
+---@field SettingSprint_1 UWBP_SettingBase_C
+---@field ValueAimAssist UWBP_SettingSpinner_C
+---@field ValueAltFireToggle UWBP_SettingSpinner_C
+---@field ValueCameraShakeModifier UWBP_SettingSlider_C
+---@field ValueDamageNumbers UWBP_SettingSpinner_C
+---@field ValueInteract UWBP_SettingSpinner_C
+---@field ValueMinimapDistance UWBP_SettingSlider_C
+---@field ValuePauseFocusLost UWBP_SettingSpinner_C
+---@field ValueScan UWBP_SettingSpinner_C
+---@field ValueSprint_1 UWBP_SettingSpinner_C
+---@field ValueStartOnline UWBP_SettingSpinner_C
+---@field OnInputAction_SystemMenu FWBP_GameplaySettings_COnInputAction_SystemMenu
+---@field CachedParentSysSettings UWBP_SystemSettings_3Panel_C
+---@field DefaultSettingsValues TArray<int32>
+---@field LastFocusedWidget UWBP_SettingBase_C
+---@field FocusKeeper FWBP_GameplaySettings_CFocusKeeper
+---@field FocusKeeperTab FWBP_GameplaySettings_CFocusKeeperTab
+---@field DefaultSettingsSliderValues TArray<float>
+UWBP_GameplaySettings_C = {}
+
+function UWBP_GameplaySettings_C:BuildDefaultArray() end
+---@param Widget UPanelWidget
+function UWBP_GameplaySettings_C:UpdateWidgetColors(Widget) end
+function UWBP_GameplaySettings_C:SaveSettings() end
+function UWBP_GameplaySettings_C:LoadSettings() end
+function UWBP_GameplaySettings_C:BndEvt__ValueMusic_K2Node_ComponentBoundEvent_5_OnValueChanged__DelegateSignature() end
+function UWBP_GameplaySettings_C:InputAction_SystemMenu() end
+---@param NewScreenName FName
+function UWBP_GameplaySettings_C:ReceiveExitScreen(NewScreenName) end
+function UWBP_GameplaySettings_C:Construct() end
+function UWBP_GameplaySettings_C:UpdateColor() end
+function UWBP_GameplaySettings_C:BndEvt__ValueAimAssist_K2Node_ComponentBoundEvent_0_OnValueChanged__DelegateSignature() end
+function UWBP_GameplaySettings_C:BndEvt__ValueSprint_1_K2Node_ComponentBoundEvent_1_OnValueChanged__DelegateSignature() end
+function UWBP_GameplaySettings_C:BndEvt__ValueScan_K2Node_ComponentBoundEvent_2_OnValueChanged__DelegateSignature() end
+function UWBP_GameplaySettings_C:BndEvt__ValueInteract_K2Node_ComponentBoundEvent_3_OnValueChanged__DelegateSignature() end
+---@param IsDesignTime boolean
+function UWBP_GameplaySettings_C:PreConstruct(IsDesignTime) end
+function UWBP_GameplaySettings_C:RestoreToDefault() end
+function UWBP_GameplaySettings_C:BndEvt__ValueMasterVolume_K2Node_ComponentBoundEvent_4_OnValueChanged__DelegateSignature() end
+function UWBP_GameplaySettings_C:UpdateMinimapZoom() end
+function UWBP_GameplaySettings_C:BndEvt__ValueDamageNumbers_K2Node_ComponentBoundEvent_6_OnValueChanged__DelegateSignature() end
+---@param SettingWidget UWBP_SettingBase_C
+function UWBP_GameplaySettings_C:BP_FocusKepper(SettingWidget) end
+---@param SettingTab UWBP_SettingsTabBtn_C
+function UWBP_GameplaySettings_C:BP_FocusKeeperTab(SettingTab) end
+function UWBP_GameplaySettings_C:BndEvt__ValueAltFireToggle_K2Node_ComponentBoundEvent_8_OnValueChanged__DelegateSignature() end
+function UWBP_GameplaySettings_C:BndEvt__ValueCameraShakeModifier_K2Node_ComponentBoundEvent_11_OnValueChanged__DelegateSignature() end
+function UWBP_GameplaySettings_C:BndEvt__ValuePauseFocusLost_K2Node_ComponentBoundEvent_9_OnValueChanged__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_GameplaySettings_C:ExecuteUbergraph_WBP_GameplaySettings(EntryPoint) end
+---@param SettingTab UWBP_SettingsTabBtn_C
+function UWBP_GameplaySettings_C:FocusKeeperTab__DelegateSignature(SettingTab) end
+---@param SettingWidget UWBP_SettingBase_C
+function UWBP_GameplaySettings_C:FocusKeeper__DelegateSignature(SettingWidget) end
+function UWBP_GameplaySettings_C:OnInputAction_SystemMenu__DelegateSignature() end
+
+

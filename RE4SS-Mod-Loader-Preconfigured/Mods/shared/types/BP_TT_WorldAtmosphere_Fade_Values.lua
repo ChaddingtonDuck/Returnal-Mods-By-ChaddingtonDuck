@@ -1,0 +1,71 @@
+---@meta
+
+---@class UBP_TT_WorldAtmosphere_Fade_Values_C : UPrimaryDataAsset
+---@field ['Directional Light Transform'] FTransform
+---@field ['Directional Lighting Intensity'] float
+---@field ['Directional Lighting Color'] FColor
+---@field ['Directional Lighting Color Temperature'] float
+---@field ['Directional Lighting Indirect Intensity'] float
+---@field ['Directional Lighting Volumetric Scattering'] float
+---@field ['Light Shaft Occlusion'] boolean
+---@field ['Directional Lighting Occlusion Mask Darkening'] float
+---@field ['Directional Lighting Occlusion Depth Range'] float
+---@field ['Light Shaft Bloom'] boolean
+---@field ['Directional Lighting Bloom Scale'] float
+---@field ['Directional Lighting Bloom Threshold'] float
+---@field ['Directional Lighting Bloom Max Brightness'] float
+---@field ['Directional Lighting Bloom Tint'] FColor
+---@field ['Directional Lighting Distance Field Shadows Distance'] float
+---@field ['Directional Lighting Dynamic Shadow Distance'] float
+---@field ['Directional Lighting Shadow Steps'] int32
+---@field ['Directional Lighting Distribution Exponent'] float
+---@field ['Directional Lighting Transition Fraction'] float
+---@field ['Directional Lighting Distance Fadeout Fraction'] float
+---@field ['TGGI Skylight Color'] FColor
+---@field ['TGGI Light Injection Scale'] float
+---@field ['TGGI Emissive Injection Scale'] float
+---@field ['TGGI Base Ambient'] FColor
+---@field ['TGGI Specular Boost'] float
+---@field ['TGGI Exposure Compensation Hack'] float
+---@field ['ExpHeightFog Fog Density'] float
+---@field ['ExpHeightFog Fog Height Falloff'] float
+---@field ['ExpHeightFog Second Fog Density'] float
+---@field ['ExpHeightFog Second Fog Height Falloff'] float
+---@field ['ExpHeightFog Second Fog Height Offset'] float
+---@field ['ExpHeightFog Inscattering Color'] FColor
+---@field ['ExpHeightFog Max Opacity'] float
+---@field ['ExpHeightFog Directional Inscattering Exponent'] float
+---@field ['ExpHeightFog Directional Inscattering Start Distance'] float
+---@field ['ExpHeightFog Directional Inscattering Color'] FColor
+---@field ['ExpHeightFog Scattering Distribution'] float
+---@field ['ExpHeightFog Albedo'] FColor
+---@field ['ExpHeightFog Extinction Scale'] float
+---@field ['ExpHeightFog View Distance'] float
+---@field ['SkyAtmosphere Rayleigh Scattering Scale'] float
+---@field ['SkyAtmosphere Rayleigh Scattering'] FColor
+---@field ['SkyAtmosphere Rayleigh Exponential Distribution'] float
+---@field ['SkyAtmosphere Mie Scattering Scale'] float
+---@field ['SkyAtmosphere Mie Scattering'] FColor
+---@field ['SkyAtmosphere Mie Absorption Scale'] float
+---@field ['SkyAtmosphere Mie Absorption'] FColor
+---@field ['SkyAtmosphere Mie Anisotropy'] float
+---@field ['SkyAtmosphere Mie Exponential Distribution'] float
+---@field ['SkyAtmosphere Absorption Scale'] float
+---@field ['SkyAtmosphere Absorption'] FColor
+---@field ['SkyAtmosphere Sky Luminance Factor'] FColor
+---@field ['SkyAtmosphere Aerial Perspective View Distance'] float
+---@field ['SkyAtmosphere Height Fog Contribution'] float
+---@field ['SkyAtmosphere Transmittance'] float
+---@field ['PostProcess Bloom Intensity'] float
+---@field ['PostProcess Bloom Threshold'] float
+---@field ['PostProcess Global Contrast'] FVector4
+---@field ['PostProcess Global Offset'] FVector4
+---@field ['PostProcess Shadows Gain'] FVector4
+---@field ['PostProcess Midtones Contrast'] FVector4
+---@field ['PostProcess Midtones Offset'] FVector4
+---@field ['PostProcess Ambient Occlusion Intensity'] float
+---@field ['PostProcess Ambient Occlusion Radius'] float
+UBP_TT_WorldAtmosphere_Fade_Values_C = {}
+
+
+

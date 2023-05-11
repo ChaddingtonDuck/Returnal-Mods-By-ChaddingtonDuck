@@ -1,0 +1,12 @@
+---@meta
+
+---@class F3DWpnTailResult
+---@field Position_2_F1B029B647B75225F92A6788B68A3866 FVector
+---@field HitNormal_4_B7674C754945617CC0230CB2943B0381 FVector
+---@field Distance_7_CE6575F74325D96666047D96DEBF39E0 float
+---@field HitMaterial_10_71BF621244B2C921596A9C9FC86A61AD UPhysicalMaterial
+---@field Direction_13_DCD609D145C60A9C433C18B4D83854CC FVector
+F3DWpnTailResult = {}
+
+
+

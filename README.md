@@ -74,16 +74,16 @@ To add a new mod, follow these steps:
 4. Add the name of your mod to the list. Use `1` to enable the mod or `0` to disable it.
 
 #### Example mods.txt, add your mod to enable it:
-CheatManagerEnablerMod : 1
-ActorDumperMod : 0
-ConsoleCommandsMod : 1
-ConsoleEnablerMod : 1
-SplitScreenMod : 0
-LineTraceMod : 1
-BPModLoaderMod : 0
-LockFPSMod : 1
-; Built-in keybinds, do not move up!
-Keybinds : 1
+`CheatManagerEnablerMod : 1`
+`ActorDumperMod : 0`
+`ConsoleCommandsMod : 1`
+`ConsoleEnablerMod : 1`
+`SplitScreenMod : 0`
+`LineTraceMod : 1`
+`BPModLoaderMod : 0`
+`LockFPSMod : 1`
+`; Built-in keybinds, do not move up!`
+`Keybinds : 1`
 
 The mod loader only looks for the folder name before any symbols/spaces/etc
 So even though our folder is `LockFPSMod.ChaddingtonDuck` you only have to add the name of the mod `LockFPSMod` here.
