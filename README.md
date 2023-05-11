@@ -33,11 +33,12 @@ Note that on steam if you right click Returnal and choose "Manage, Browse Local 
 you to the game install directory.  You want to go a bit deeper to the Win64 path shown below.
 
 
-F:\SteamLibrary\steamapps\common\Returnal\Returnal\Binaries\Win64   <!-- You want this, be inside Win64 -->
-F:\SteamLibrary\steamapps\common\Returnal                           <!-- This is not quite right -->
+You dont want this, this is where steam sends you when you look at game files
+- SteamLibrary\steamapps\common\Returnal  
+You want this, inside Win64
+- SteamLibrary\steamapps\common\Returnal\Returnal\Binaries\Win64                     
 
 Once done, your SteamLibrary\steamapps\common\Returnal\Returnal\Binaries\Win64 folder should look like this:
-----
 - Mods
 - UE4SS_Signatures
 - Changelog.md
@@ -52,14 +53,12 @@ Once done, your SteamLibrary\steamapps\common\Returnal\Returnal\Binaries\Win64 f
 Open the `UE4SS-settings.ini` file and replace the following section:
 
 [EngineVersionOverride]
----
 - MajorVersion =
 - MinorVersion =
 
 with:
 
 [EngineVersionOverride]
----
 - MajorVersion = 4
 - MinorVersion = 25
 
@@ -74,20 +73,17 @@ To add a new mod, follow these steps:
 3. Update the `mods.txt` file located in `SteamLibrary\steamapps\common\Returnal\Returnal\Binaries\Win64\Mods`.
 4. Add the name of your mod to the list. Use `1` to enable the mod or `0` to disable it.
 
-Example mods.txt:
----
-- CheatManagerEnablerMod : 1
-- ActorDumperMod : 0
-- ConsoleCommandsMod : 1
-- ConsoleEnablerMod : 1
-- SplitScreenMod : 0
-- LineTraceMod : 1
-- BPModLoaderMod : 0
-- LockFPSMod : 1
-
-
-- ; Built-in keybinds, do not move up!
-- Keybinds : 1
+#### Example mods.txt, add your mod to enable it:
+CheatManagerEnablerMod : 1
+ActorDumperMod : 0
+ConsoleCommandsMod : 1
+ConsoleEnablerMod : 1
+SplitScreenMod : 0
+LineTraceMod : 1
+BPModLoaderMod : 0
+LockFPSMod : 1
+; Built-in keybinds, do not move up!
+Keybinds : 1
 
 The mod loader only looks for the folder name before any symbols/spaces/etc
 So even though our folder is `LockFPSMod.ChaddingtonDuck` you only have to add the name of the mod `LockFPSMod` here.
