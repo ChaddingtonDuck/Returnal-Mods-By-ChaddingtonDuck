@@ -4,11 +4,13 @@ UE4SS is the mod loader used for Returnal, primarily supporting Lua mods. Curren
 
 **Note:** Make sure to disable steam cloud saves and online play, steam may ban you for playing modded games online.  I'm not responsible etc etc etc.
 
-## Getting Started, Install UE4SS
+## Getting Started
 
 After installing Returnal through steam, follow these steps:
 
-### Step 1: Download the Latest Release
+### Step 1: Install UE4SS, Download the Latest Release
+
+I've included a preconfigured UE4SS folder in this repo for convenience/reference, but you really should download the most recent release from their repo instead.  This serves as an example of the setup needed for returnal only, it's not an official copy of their release.
 
 Download the latest release of UE4SS_Xinput.zip and zCustomGameConfigs.zip from [this page](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/v2.5.2).
 
