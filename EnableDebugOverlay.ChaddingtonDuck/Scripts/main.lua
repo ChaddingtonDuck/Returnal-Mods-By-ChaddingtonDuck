@@ -23,5 +23,5 @@ RegisterHook("/Script/Engine.PlayerController:ClientRestart", function(self, New
         end
     end
 
-    KismetSystemLibrary:ExecuteConsoleCommand(pc.Player, 't.MaxFPS 60', pc)
+    KismetSystemLibrary:ExecuteConsoleCommand(pc.Player, 'showdebug 1', pc)
 end)
